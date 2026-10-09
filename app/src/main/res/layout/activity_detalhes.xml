@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@color/fundo">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+            <Button android:id="@+id/botaoVoltar"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:minHeight="48dp" android:text="@string/voltar"
+                android:textAllCaps="false" android:textColor="@color/laranja"
+                android:backgroundTint="@color/laranja_claro" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="220dp"
+                android:layout_marginTop="12dp" android:background="@drawable/fundo_imagem">
+                <ImageView android:id="@+id/imagemDetalhe"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:padding="16dp" android:scaleType="fitCenter" />
+            </FrameLayout>
+<TextView android:id="@+id/categoriaDetalhe" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/laranja" android:textStyle="bold" android:layout_marginTop="20dp" />
+<TextView android:id="@+id/nomeDetalhe" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="28sp" android:textColor="@color/texto" android:textStyle="bold" android:layout_marginTop="4dp" />
+<TextView android:id="@+id/precoDetalhe" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="24sp" android:textColor="@color/laranja" android:textStyle="bold" android:layout_marginTop="8dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:orientation="vertical"
+                android:background="@drawable/fundo_cartao" android:padding="16dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:textColor="@color/texto" android:textStyle="bold" android:text="@string/descricao" />
+<TextView android:id="@+id/descricaoDetalhe" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/texto_secundario" android:layout_marginTop="8dp" android:lineSpacingExtra="3dp" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/texto" android:textStyle="bold" android:text="@string/alergenicos" android:layout_marginTop="16dp" />
+<TextView android:id="@+id/alergenicosDetalhe" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/texto_secundario" android:layout_marginTop="4dp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:padding="16dp"
+                android:background="@drawable/fundo_cartao" android:orientation="vertical">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:textColor="@color/texto" android:textStyle="bold" android:text="@string/quantidade" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <Button android:id="@+id/botaoDiminuir" android:layout_width="64dp"
+                        android:layout_height="wrap_content" android:minHeight="56dp"
+                        android:text="@string/menos" android:textSize="24sp"
+                        android:textColor="@color/laranja" android:backgroundTint="@color/laranja_claro"
+                        android:contentDescription="@string/diminuir" />
+                    <TextView android:id="@+id/textoQuantidade" android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:layout_weight="1"
+                        android:gravity="center" android:textColor="@color/texto"
+                        android:textSize="24sp" android:textStyle="bold"
+                        android:accessibilityLiveRegion="polite" />
+                    <Button android:id="@+id/botaoAumentar" android:layout_width="64dp"
+                        android:layout_height="wrap_content" android:minHeight="56dp"
+                        android:text="@string/mais" android:textSize="24sp"
+                        android:textColor="@color/superficie" android:backgroundTint="@color/laranja"
+                        android:contentDescription="@string/aumentar" />
+                </LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="@color/texto_secundario" android:text="@string/limite" android:layout_marginTop="4dp" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/texto" android:text="@string/total" android:layout_marginTop="20dp" />
+<TextView android:id="@+id/textoTotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="28sp" android:textColor="@color/laranja" android:textStyle="bold" android:accessibilityLiveRegion="polite" />
+            </LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="@color/texto_secundario" android:text="@string/simulacao" android:layout_marginTop="16dp" android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Sabor da Casa</string>
+    <string name="titulo_cardapio">Nosso cardápio</string>
+    <string name="subtitulo_cardapio">Escolha um prato e confira os detalhes.</string>
+    <string name="selo_cardapio">FEITO COM CARINHO</string>
+    <string name="ver_detalhes">Ver detalhes</string>
+    <string name="ver_detalhes_de">Ver detalhes de %1$s</string>
+    <string name="imagem_prato">Ilustração de %1$s</string>
+    <string name="voltar">Voltar ao cardápio</string>
+    <string name="descricao">Sobre o prato</string>
+    <string name="alergenicos">Alergênicos</string>
+    <string name="alergenicos_nao_informados">Informação sobre alergênicos não disponível.</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="diminuir">Diminuir quantidade</string>
+    <string name="aumentar">Aumentar quantidade</string>
+    <string name="menos">−</string>
+    <string name="mais">+</string>
+    <string name="total">Total estimado</string>
+    <string name="limite">De 1 a 20 unidades.</string>
+    <string name="simulacao">Simulação: nenhum pedido será enviado.</string>
+    <string name="prato_nao_encontrado">Prato não encontrado. Selecione novamente no cardápio.</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.CardapioDigital" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/laranja</item>
+        <item name="colorPrimaryDark">@color/laranja</item>
+        <item name="colorAccent">@color/laranja</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:colorBackground">@color/fundo</item>
+        <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/texto_secundario</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
