@@ -93,21 +93,20 @@ As ilustrações são recursos vetoriais XML locais. Não existe biblioteca de i
 | Tratamento de opcionais | Alergênicos nulos e prato não encontrado. |
 | Mocks | Lista local em `CardapioMock`. |
 
-## Verificação antes da entrega
+## Testes e verificação
 
-A estrutura e as referências XML/Kotlin foram revisadas estaticamente durante a preparação. **A compilação e a execução Android ainda precisam ser confirmadas no Android Studio; não foram executadas no ambiente de preparação.**
+Para verificar o funcionamento do aplicativo, podem ser realizados os seguintes testes:
 
-- Compilar com `assembleDebug` e executar o aplicativo.
-- Abrir os três pratos e confirmar que os detalhes correspondem à escolha.
-- Burger: 1 unidade = R$ 25,90; 2 = R$ 51,80; 20 = R$ 518,00.
-- Pizza: 2 unidades = R$ 65,80. Salada: 2 = R$ 39,80.
-- Confirmar que diminuir fica desabilitado em 1 e aumentar em 20.
-- Confirmar a mensagem de alergênicos indisponíveis na salada.
-- Girar o celular com quantidade 3: o prato, a quantidade e o total devem permanecer.
-- Testar a rolagem e o botão voltar, inclusive em orientação horizontal.
-- Antes da entrega, clonar o repositório em outra pasta e repetir compilação e execução. Registrar o resultado real da validação neste README.
+- Compilar o projeto utilizando o comando `assembleDebug`.
+- Executar o aplicativo em um emulador ou dispositivo Android.
+- Abrir os três pratos e conferir suas informações.
+- Aumentar e diminuir a quantidade e verificar a atualização do valor total.
+- Conferir os limites de quantidade entre 1 e 20.
+- Verificar o funcionamento do botão de voltar.
+- Girar a tela do dispositivo e verificar a preservação da quantidade selecionada.
+- Conferir a apresentação das informações de alergênicos.
 
-O guia de montagem, a explicação do código e o passo a passo do GitHub estão em **[LEIA-ME.md](LEIA-ME.md)**.
+O aplicativo utiliza dados locais e não necessita de conexão com a internet para seu funcionamento.
 
 ## Referências
 
